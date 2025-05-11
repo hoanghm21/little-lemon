@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Menu from '../components/Menu';
 import HeroSection from '../components/Hero';
 import Highlights from '../components/Highlights';
 import Testimonials from '../components/Testimonials';
@@ -17,10 +16,10 @@ const Home: React.FC = () => {
             </Head>
             <Header />
             <HeroSection />
-            <main>
+            <main aria-label="Main content">
                 <Highlights />
                 <Testimonials />
-                <About /> {/* Add the About component here */}
+                <About />
             </main>
             <Footer />
         </div>

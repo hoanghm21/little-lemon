@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Slider from 'react-slick';
+import Slider, {CustomArrowProps} from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -88,28 +88,17 @@ const ReviewText = styled.p`
   color: #666;
 `;
 
-const Arrow = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  color: #333; /* Updated color */
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 2;
-`;
+const SlickArrowLeft: React.FC<CustomArrowProps> = ({ currentSlide, slideCount, ...props }) => (
+  <div {...props}>
+    <i className="fa-solid fa-chevron-left"></i>
+  </div>
+);
 
-const PrevArrow = styled(Arrow)`
-  left: 10px;
-`;
-
-const NextArrow = styled(Arrow)`
-  right: 10px;
-`;
+const SlickArrowRight: React.FC<CustomArrowProps> = ({ currentSlide, slideCount, ...props }) => (
+  <div {...props}>
+    <i className="fa-solid fa-chevron-right"></i>
+  </div>
+);
 
 const Testimonials: React.FC = () => {
   const settings = {
@@ -120,8 +109,8 @@ const Testimonials: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    prevArrow: <PrevArrow>{'<'}</PrevArrow>,
-    nextArrow: <NextArrow>{'>'}</NextArrow>,
+    prevArrow: <SlickArrowLeft />,
+    nextArrow: <SlickArrowRight />,
     responsive: [
       {
         breakpoint: 1024,

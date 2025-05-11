@@ -29,10 +29,11 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          {/* Add the Google Font link here */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Markazi+Text:wght@400;700&family=Karla:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>
