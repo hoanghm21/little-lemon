@@ -18,7 +18,6 @@ describe('initializeTimes', () => {
 
     // Simulate fetchAPI returning an empty array
     const result = initializeTimes();
-    console.log('Result:', result); // Log the result for debugging
     // Assert the result (ensure it falls back to default times)
     expect(result).toEqual([
       '17:00', '17:30',
@@ -60,7 +59,6 @@ describe('updateAvailableTimes', () => {
 
     // Call updateAvailableTimes directly
     const result = updateAvailableTimes(invalidDate);
-    console.log('Result11:', result); // Log the result for debugging
     // Assert the result (ensure it falls back to default times)
     expect(result).toEqual([
       '17:00', '17:30',
