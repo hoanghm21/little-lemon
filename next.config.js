@@ -1,4 +1,5 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: "export",  // <=== enables static exports
   compiler: {
     styledComponents: true,
@@ -6,3 +7,4 @@ module.exports = {
   reactStrictMode: true,
   basePath: "/little-lemon",
 };
+module.exports = nextConfig;
