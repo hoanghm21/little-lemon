@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const FooterContainer = styled.footer`
   background-color: #333;
@@ -42,8 +43,8 @@ const NavTitle = styled.h3`
   font-weight: bold; /* Bold */
 `;
 
-const NavLink = styled.a`
-  font-family: 'Karla', sans-serif; /* Updated font */
+const NavLink = styled(Link)`
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
   color: #fff;
   text-decoration: none;
@@ -121,7 +122,7 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <LeftSection>
-        <Logo src="/assets/lemon_logo.png" alt="Little Lemon Logo" />
+        <Logo src="lemon_logo.png" alt="Little Lemon Logo" />
       </LeftSection>
       <RightSection>
         <NavSection>
@@ -129,26 +130,26 @@ const Footer: React.FC = () => {
           <NavLink href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/menu">Menu</NavLink>
-          <NavLink href="/booking">Reservations</NavLink> {/* Add this link */}
+          <NavLink href="/booking">Reservations</NavLink>
           <NavLink href="/order-online">Order Online</NavLink>
           <NavLink href="/login">Login</NavLink>
         </NavSection>
         <ContactsSection>
           <ContactsTitle>Contacts</ContactsTitle>
           <ContactItem>
-            <ContactIcon src="/assets/location_icon.png" alt="Location" />
+            <ContactIcon src="location_icon.png" alt="Location" />
             <ContactText>1699 Oak Avenue, Chicago, IL 60606</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/assets/phone.png" alt="Phone" />
+            <ContactIcon src="phone.png" alt="Phone" />
             <ContactText>(312) 528-5097</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/assets/mail.png" alt="Email" />
+            <ContactIcon src="mail.png" alt="Email" />
             <ContactText>info@little_lemon.com</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/assets/Copyright Circle .png" alt="Copyright" />
+            <ContactIcon src="Copyright Circle .png" alt="Copyright" />
             <ContactText>2025 by Little Lemon. All Rights Reserved.</ContactText>
           </ContactItem>
         </ContactsSection>
@@ -156,13 +157,13 @@ const Footer: React.FC = () => {
           <SocialTitle>Connect with us</SocialTitle>
           <SocialIcons>
             <SocialLink href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/assets/Facebook.png" alt="Facebook" />
+              <SocialIcon src="Facebook.png" alt="Facebook" />
             </SocialLink>
             <SocialLink href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/assets/Instagram.png" alt="Instagram" />
+              <SocialIcon src="Instagram.png" alt="Instagram" />
             </SocialLink>
             <SocialLink href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/assets/Twitter.png" alt="Twitter" />
+              <SocialIcon src="Twitter.png" alt="Twitter" />
             </SocialLink>
           </SocialIcons>
         </SocialSection>
