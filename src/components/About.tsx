@@ -77,8 +77,8 @@ const About: React.FC = () => {
         </Description>
       </TextContainer>
       <ImagesContainer>
-        <ImageA src="Mario and Adrian A.jpg" alt="Mario and Adrian A" />
-        <ImageB src="Mario and Adrian b.jpg" alt="Mario and Adrian B" />
+        <ImageA src="/Mario and Adrian A.jpg" alt="Mario and Adrian A" />
+        <ImageB src="/Mario and Adrian b.jpg" alt="Mario and Adrian B" />
       </ImagesContainer>
     </AboutContainer>
   );

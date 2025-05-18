@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         <div>
             <Head>
                 <title>Little Lemon Restaurant</title>
-                <link rel="icon" href="lemon_icon.svg" type="image/svg+xml" />
+                <link rel="icon" href="/lemon_icon.svg" type="image/svg+xml" />
             </Head>
             <Header />
             <HeroSection />
