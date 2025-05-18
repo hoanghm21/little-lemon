@@ -124,7 +124,7 @@ const Highlights: React.FC = () => {
       </HeaderContainer>
       <DishesContainer>
         <DishCard>
-          <DishImage src="/greek salad.jpg" alt="Greek Salad" />
+          <DishImage src="greek salad.jpg" alt="Greek Salad" />
           <DishContent>
             <DishTitleContainer>
               <DishTitle>Greek Salad</DishTitle>
@@ -135,12 +135,12 @@ const Highlights: React.FC = () => {
             </DishDescription>
             <OrderContainer>
               <OrderText>Order a delivery</OrderText>
-              <MotorbikeIcon src="/bike-icon.png" alt="Motorbike" />
+              <MotorbikeIcon src="bike-icon.png" alt="Motorbike" />
             </OrderContainer>
           </DishContent>
         </DishCard>
         <DishCard>
-          <DishImage src="/bruchetta.svg" alt="Bruchetta" />
+          <DishImage src="bruchetta.svg" alt="Bruchetta" />
           <DishContent>
             <DishTitleContainer>
               <DishTitle>Bruchetta</DishTitle>
@@ -151,12 +151,12 @@ const Highlights: React.FC = () => {
             </DishDescription>
             <OrderContainer>
               <OrderText>Order a delivery</OrderText>
-              <MotorbikeIcon src="/bike-icon.png" alt="Motorbike" />
+              <MotorbikeIcon src="bike-icon.png" alt="Motorbike" />
             </OrderContainer>
           </DishContent>
         </DishCard>
         <DishCard>
-          <DishImage src="/lemon dessert.jpg" alt="Lemon Dessert" />
+          <DishImage src="lemon dessert.jpg" alt="Lemon Dessert" />
           <DishContent>
             <DishTitleContainer>
               <DishTitle>Lemon Dessert</DishTitle>
