@@ -31,77 +31,57 @@ const Li = styled.li`
   margin: 0;
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)<{ $active?: boolean }>`
   font-family: 'Karla', sans-serif;
   font-size: 18px;
-  color: #000000;
+  color: ${({ $active }) => ($active ? '#f4ce14' : '#000000')};
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
+  font-weight: ${({ $active }) => ($active ? 'bold' : 'normal')};
+  border-bottom: ${({ $active }) => ($active ? '2px solid #f4ce14' : 'none')};
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+    outline: none;
+  }
 
   &:hover {
     background-color: #495E57;
     color: #f4ce14;
-    text-decoration: none;
-  }
-
-  &.active {
-    font-weight: bold;
-    color: #f4ce14;
-    border-bottom: 2px solid #f4ce14;
   }
 `;
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/menu', label: 'Menu' },
+  { href: '/booking', label: 'Reservations' },
+  { href: '/order', label: 'Order Online' },
+  { href: '/login', label: 'Login' },
+];
 
 const Header: React.FC = () => {
   const router = useRouter();
 
   return (
     <HeaderContainer>
-      <Logo src="/little-lemon/assets/Logo.svg" alt="Little Lemon Logo" />
+      <Logo src="/assets/Logo.svg" alt="Little Lemon Logo" />
       <Nav>
         <Ul>
-          <Li>
-            <Link href="/" passHref>
-              <StyledLink className={router.pathname === '/' ? 'active' : ''}>
-                Home
+          {navLinks.map(({ href, label }) => (
+            <Li key={href}>
+              <StyledLink
+                href={href}
+                $active={router.pathname === href}
+              >
+                {label}
               </StyledLink>
-            </Link>
-          </Li>
-          <Li>
-            <Link href="/about" passHref>
-              <StyledLink className={router.pathname === '/about' ? 'active' : ''}>
-                About
-              </StyledLink>
-            </Link>
-          </Li>
-          <Li>
-            <Link href="/menu" passHref>
-              <StyledLink className={router.pathname === '/menu' ? 'active' : ''}>
-                Menu
-              </StyledLink>
-            </Link>
-          </Li>
-          <Li>
-            <Link href="/booking" passHref>
-              <StyledLink className={router.pathname === '/booking' ? 'active' : ''}>
-                Reservations
-              </StyledLink>
-            </Link>
-          </Li>
-          <Li>
-            <Link href="/order" passHref>
-              <StyledLink className={router.pathname === '/order' ? 'active' : ''}>
-                Order Online
-              </StyledLink>
-            </Link>
-          </Li>
-          <Li>
-            <Link href="/login" passHref>
-              <StyledLink className={router.pathname === '/login' ? 'active' : ''}>
-                Login
-              </StyledLink>
-            </Link>
-          </Li>
+            </Li>
+          ))}
         </Ul>
       </Nav>
     </HeaderContainer>
