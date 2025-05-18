@@ -167,7 +167,7 @@ const Highlights: React.FC = () => {
             </DishDescription>
             <OrderContainer>
               <OrderText>Order a delivery</OrderText>
-              <MotorbikeIcon src="/bike-icon.png" alt="Motorbike" />
+              <MotorbikeIcon src="bike-icon.png" alt="Motorbike" />
             </OrderContainer>
           </DishContent>
         </DishCard>

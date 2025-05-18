@@ -69,7 +69,7 @@ const Header: React.FC = () => {
 
   return (
     <HeaderContainer>
-      <Logo src="/Logo.svg" alt="Little Lemon Logo" />
+      <Logo src="Logo.svg" alt="Little Lemon Logo" />
       <Nav>
         <Ul>
           {navLinks.map(({ href, label }) => (

@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <LeftSection>
-        <Logo src="/lemon_logo.png" alt="Little Lemon Logo" />
+        <Logo src="lemon_logo.png" alt="Little Lemon Logo" />
       </LeftSection>
       <RightSection>
         <NavSection>
@@ -137,19 +137,19 @@ const Footer: React.FC = () => {
         <ContactsSection>
           <ContactsTitle>Contacts</ContactsTitle>
           <ContactItem>
-            <ContactIcon src="/location_icon.png" alt="Location" />
+            <ContactIcon src="location_icon.png" alt="Location" />
             <ContactText>1699 Oak Avenue, Chicago, IL 60606</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/phone.png" alt="Phone" />
+            <ContactIcon src="phone.png" alt="Phone" />
             <ContactText>(312) 528-5097</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/mail.png" alt="Email" />
+            <ContactIcon src="mail.png" alt="Email" />
             <ContactText>info@little_lemon.com</ContactText>
           </ContactItem>
           <ContactItem>
-            <ContactIcon src="/Copyright Circle .png" alt="Copyright" />
+            <ContactIcon src="Copyright Circle .png" alt="Copyright" />
             <ContactText>2025 by Little Lemon. All Rights Reserved.</ContactText>
           </ContactItem>
         </ContactsSection>
@@ -157,13 +157,13 @@ const Footer: React.FC = () => {
           <SocialTitle>Connect with us</SocialTitle>
           <SocialIcons>
             <SocialLink href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/Facebook.png" alt="Facebook" />
+              <SocialIcon src="Facebook.png" alt="Facebook" />
             </SocialLink>
             <SocialLink href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/Instagram.png" alt="Instagram" />
+              <SocialIcon src="Instagram.png" alt="Instagram" />
             </SocialLink>
             <SocialLink href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
-              <SocialIcon src="/Twitter.png" alt="Twitter" />
+              <SocialIcon src="Twitter.png" alt="Twitter" />
             </SocialLink>
           </SocialIcons>
         </SocialSection>

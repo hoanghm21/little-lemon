@@ -33,7 +33,7 @@ const ErrorPage: React.FC = () => {
     <>
       <Header />
       <Container>
-        <Image src="/images.jpg" alt="Under Construction" />
+        <Image src="images.jpg" alt="Under Construction" />
         <Message>
           This page is under construction, dear. Please come back later.
         </Message>

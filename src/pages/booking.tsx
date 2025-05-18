@@ -145,7 +145,7 @@ const Booking: React.FC = () => {
     <>
       <Head>
         <title>Little Lemon - Reservations</title>
-        <link rel="icon" href="/lemon_icon.svg" type="image/svg+xml" />
+        <link rel="icon" href="lemon_icon.svg" type="image/svg+xml" />
       </Head>
       <Header aria-label="Site header" />
       <div style={{ padding: '20px', textAlign: 'center', position: 'relative' }}>

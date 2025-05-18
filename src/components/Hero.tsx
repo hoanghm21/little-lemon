@@ -77,7 +77,6 @@ const HeroSection: React.FC = () => {
         </HeroParagraph>
         <ReserveButton>Reserve a Table</ReserveButton>
       </TextContainer>
-      <Image src="/restaurantfood.jpg" alt="Restaurant Food" />
     </HeroContainer>
   );
 };
