@@ -1,10 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",  // <=== enables static exports
+  output: "export",
   compiler: {
     styledComponents: true,
   },
   reactStrictMode: true,
-  basePath: "/little-lemon",
 };
 module.exports = nextConfig;
