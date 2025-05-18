@@ -133,14 +133,14 @@ const Testimonials: React.FC = () => {
 
   return (
     <TestimonialsContainer>
-      <LemonImage src="lemon.svg" alt="Lemon" />
+      <LemonImage src="/lemon.svg" alt="Lemon" />
       <TestimonialsContent>
         <Title>What our customers say!</Title>
         <Slider {...settings}>
           <TestimonialCard>
-            <StarIcon src="icon_star.png" alt="Star" />
+            <StarIcon src="/icon_star.png" alt="Star" />
             <UserInfo>
-              <UserAvatar src="anika.png" alt="Anika J" />
+              <UserAvatar src="/anika.png" alt="Anika J" />
               <UserDetails>
                 <UserName>Anika J</UserName>
                 <UserSocial>@anika__J</UserSocial>
@@ -151,9 +151,9 @@ const Testimonials: React.FC = () => {
             </ReviewText>
           </TestimonialCard>
           <TestimonialCard>
-            <StarIcon src="icon_star.png" alt="Star" />
+            <StarIcon src="/icon_star.png" alt="Star" />
             <UserInfo>
-              <UserAvatar src="judywealth.png" alt="Judy Ejike Korodele" />
+              <UserAvatar src="/judywealth.png" alt="Judy Ejike Korodele" />
               <UserDetails>
                 <UserName>Judy Ejike Korodele</UserName>
                 <UserSocial>@judywealth</UserSocial>
@@ -164,9 +164,9 @@ const Testimonials: React.FC = () => {
             </ReviewText>
           </TestimonialCard>
           <TestimonialCard>
-            <StarIcon src="icon_star.png" alt="Star" />
+            <StarIcon src="/icon_star.png" alt="Star" />
             <UserInfo>
-              <UserAvatar src="brutusK.png" alt="Brutus K" />
+              <UserAvatar src="/brutusK.png" alt="Brutus K" />
               <UserDetails>
                 <UserName>Brutus K</UserName>
                 <UserSocial>@brutusK</UserSocial>
@@ -177,9 +177,9 @@ const Testimonials: React.FC = () => {
             </ReviewText>
           </TestimonialCard>
           <TestimonialCard>
-            <StarIcon src="icon_star.png" alt="Star" />
+            <StarIcon src="/icon_star.png" alt="Star" />
             <UserInfo>
-              <UserAvatar src="sara72.png" alt="Sara Lopez" />
+              <UserAvatar src="/sara72.png" alt="Sara Lopez" />
               <UserDetails>
                 <UserName>Sara Lopez</UserName>
                 <UserSocial>@sara72</UserSocial>
