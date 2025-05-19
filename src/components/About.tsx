@@ -41,27 +41,48 @@ const Description = styled.p`
 
 const ImagesContainer = styled.div`
   position: relative;
-  width: 450px; /* Adjust the width as needed */
-  height: 350px; /* Adjust the height as needed */
+  width: 450px;
+  max-width: 90vw;
+  height: 350px;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 300px;
+  }
 `;
 
 const ImageA = styled.img`
-  width: 400px;
+  width: 88%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
   position: absolute;
   top: 70px;
   left: -240px;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    left: 0;
+    top: 0;
+    max-width: 300px;
+  }
 `;
 
 const ImageB = styled.img`
-  width: 400px;
+  width: 88%;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
   position: absolute;
   top: 0;
   left: 135px;
   z-index: 1;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    left: 20%;
+    top: 20%;
+    max-width: 300px;
+  }
 `;
 
 const About: React.FC = () => {
